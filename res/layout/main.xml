@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layout_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/pin_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/pin_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/pin_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/pin_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_random"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="   Randomize  "
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="   Reset  "
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pwd_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Invalid PIN"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+</LinearLayout>
